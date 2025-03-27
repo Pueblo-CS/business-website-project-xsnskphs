@@ -84,6 +84,10 @@ a:hover {
     font-size: 30px;
     font-weight: bolder;
 }
+
+.attribution::before {
+    content:"-";
+}
 .card {
     background-color: white;
     width: 20%;
