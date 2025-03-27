@@ -4,6 +4,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0px;
 }
 
 #header, .nav a, #hero, #cta {
@@ -13,6 +14,15 @@ body {
 #header {
     background-color: #62466b;
     height: 60px;
+    padding: 10px;
+}
+
+.logo {
+    float: left;
+}
+
+.nav {
+    float: right;
 }
 
 a {
@@ -25,6 +35,11 @@ a:hover {
 
 #hero {
     font-size: 22px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 #hero h1 {
@@ -33,6 +48,7 @@ a:hover {
 
 #cta {
     background-color: #f84aa7;
+    float: right;
 }
 
 #cta:hover {
@@ -40,11 +56,48 @@ a:hover {
     color: #f84aa7;
 }
 
+.button {
+   display: block;
+   width: fit-content; 
+   padding: 10px 20px 10px 20px;
+   border-radius: 8px;
+   border-width: 2px;
+   border-style: solid;
+}
+
 #services {
     background-color: #f8e5ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20vh 40px 20vh 40px;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20vh 40px 20vh 40px;
+}
+
+.quote::before, .quote::after {
+    content: "\"";
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.attribution::before {
+    content: "-";
 }
 
 .card {
     background-color: white;
-    width:fit-content;
+    width: 20%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px #312336;
 }
