@@ -4,6 +4,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    margin:0px;
 }
 
 #header, .nav a, #hero, #cta {
@@ -13,6 +14,15 @@ body {
 #header {
     background-color:#326273;
     height:60px;
+    padding: 15px;
+}
+
+.logo {
+    float: left;
+}
+
+.nav {
+    float: right;
 }
 
 a {
@@ -25,6 +35,11 @@ a:hover {
 
 #hero {
     font-size:22px;
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+    margin-bottom:10%;
 }
 #hero h1 {  
     font-size:80px;
@@ -32,6 +47,7 @@ a:hover {
 
 #cta {
     background-color:#2600ff;
+    float:right;
 }
 
 #cta:hover {
@@ -39,12 +55,42 @@ a:hover {
     color:#2600ff;
 }
 
+.button {
+    display:block;
+    width:fit-content;
+    padding: 10px 20px 10px 20px;
+    border-width:2px;
+    border-style:solid;
+    border-radius: 15px;
+}
 
 #services {
     background-color: #326273;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20vh 40px 20vh 20px;
 }
 
+#testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20vh 40px 20vh 20px;
+}
+
+.quote::before, .quote::after {
+    content: "\"";
+    font-size: 30px;
+    font-weight: bolder;
+}
 .card {
     background-color: white;
-    width: fit-content;
-}
+    width: 20%;
+    padding:10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 11px;
+    box-shadow: 5px 5px 20px #100263;
